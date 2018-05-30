@@ -1,14 +1,15 @@
 # fibonacinumbers
 n = int(input("Geben Sie eine Zahl ein "))
 last = 1
-secondlast = 1
+secondlast = 0
 lastSave = 0
-print(1)
-print(1)
-for i in range(1, n+1):
+
+print(1, end=" ")
+for i in range(1, n):
     lastSave = last
     last += secondlast
     secondlast = lastSave
-    print(last)
+    print(last, end=" ")
 
+print(" ")
 print("Fibunacifolge: ",last)
