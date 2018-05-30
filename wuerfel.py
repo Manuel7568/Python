@@ -1,6 +1,6 @@
 # wuerfel.py
 from random import *
-
+numcounts = int(input("Wie viele Durchläufe sollen gestartet werden?"))
 anz1 = 0
 anz2 = 0
 anz3 = 0
@@ -8,7 +8,7 @@ anz4 = 0
 anz5 = 0
 anz6 = 0
 
-for i in range(0,100):
+for i in range(0,numcounts):
     rnd = randint(1,6)
     if(rnd == 1):
         anz1 += 1
